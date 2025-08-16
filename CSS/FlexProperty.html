@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Property</title>
+    <style>
+        .container
+        {
+            width: 700px;
+            height: 500px;
+            border: 3px solid red;
+            box-shadow: 3px darkblue ;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            /* gap: 30px 60px; */
+            text-align: center;
+
+
+        }
+        .item{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border: 3px solid black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+
+        }
+        .item1{
+            
+            order: -0;
+        }
+        .item2{
+            order-5
+        }
+.item5{
+    order: -1;
+}
+.item6{
+    order: -4;
+}
+
+            
+    
+    </style>
+    
+        
+    
+</head>
+<body>
+   <h1>Display Flex Property</h1>
+   <div class="container">
+
+    <div class="item item1">A</div>
+    <div class="item item2">B</div>
+    <div class="item item3">C</div>
+    <div class="item item4">D</div>
+    <div class="item item5">E</div>
+    <div class="item item6">F</div>
+    <!-- <div class="item item7">G</div>
+    <div class="item item8">H</div>
+    <div class="item item9">I</div> -->
+
+   </div>
+</body>
+</html>
