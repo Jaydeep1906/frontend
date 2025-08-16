@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Mapping Function</title>
+</head>
+<body>
+    <script>
+        /* I want to create new arrat from existing array that time we can use arrray map function 
+        In map function we can put one function as parameter to the paranthesis
+
+        */
+
+        var arr=[12,20,30,43,22,9,33];
+        var arr1=arr.map(newArray);
+        console.log(arr1);
+
+        let a1=[
+            {IName:"yess",LName:"Infotech"},
+            {IName:"sid",LName:"Infotech"},
+            {IName:"IIT",LName:"Institute"},
+            {IName:"Seven",LName:"Mentot"},
+        ]
+
+        let b1=a1.map(arrayObjFun);
+
+        document.write('b1');
+
+        function arrayObjFun(y){
+            return y.IName+""+y.LName;
+            
+
+        }
+
+    </script>
+</body>
+</html>

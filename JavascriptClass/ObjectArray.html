@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* In object Data Hold In key value pair when we write value so  "" is neccessary 
+        suppose I want to create student object then student related information will and 
+        all information will hold in key and value pair below, 
+        */
+
+        let  student={
+            id:101,
+            name:"Goldal",
+            grade:"A",
+            marks:90,
+            gender:"female",
+            hobby:['Swimming','reading','singing','chatting'],
+            specialization:{
+                degree:'computer',
+                department:'java',
+                sid:1011,
+                address:"Pune"
+            }
+
+        }
+
+        console.log(student);
+        console.log(Object.keys(student));
+        console.log(Object.values(student));
+
+        student.name="Komal";
+        console.log(student);
+        delete student.id;
+        console.log(student);
+
+        console.log(Object.freeze(student));
+
+        student.address="Mumbai";
+
+        console.log(student);
+        delete student.gender;
+        console.log(student);
+
+        // for In loop 
+        for(let object in student){
+            console.log(object);
+        }
+        
+    </script>
+</body>
+</html>

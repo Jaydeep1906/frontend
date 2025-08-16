@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <form action="read.text" onsubmit="SubmitForm(event)">
+        <button type="submit">SubmitForm</button><br><br>
+        
+    </form>
+
+    <button onclick="popUp()" id="b1">Press Here</button>&nbsp;&nbsp;
+    <input type="text" onfocus="colorChange()" onkeypress="UpdateText()" id="field">
+    <button id="livebtn">Live</button>
+    <h1 id="hh">Yess Infotech</h1>
+
+</body>
+
+   <script>
+    function SubmitForm(e){
+        console.log(e);
+        e.preventDefault();
+
+    }
+    function popUp(){
+        let a=prompt("Enter Your Name");
+        alert(a);
+        document.getElementById("b1").style.backgroundColor="orange";
+        document.getElementById("b1").style.color="green";
+        document.getElementById("b1").style.border="3px solid yellow";
+
+    }
+
+    function colorChange(){
+        document.getElementById("field").style.backgroundColor="red";
+        document.getElementById("field").style.color="White";
+        document.getElementById("field").style.border="3px solid green";
+
+    }
+
+let UpdateText=()=>{
+    let data=document.getElementById("field").value;
+    document.getElementById("hh").innerText=data;
+}
+let livebtn1 = document.getElementById("livebtn");
+
+livebtn1.addEventListener("mouseOver",()=>{
+    document.getElementById("livebtn").style.backgroundColor="purple";
+
+})
+/*listerner is use when event is occure that time listener  get notified,and listner 
+ immeditelly handle that  event who occure...listener is use to hsndle
+that event
+
+
+
+
+   </script> 
+
+</html>

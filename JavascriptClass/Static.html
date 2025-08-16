@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Consrtuctor : is method in js we dont need to call that method it will call 
+        automatically after object creaation done , we can put parameter inside parenthisis
+        2 >  prototype Method: we can give any numberto method according to our own choice and put parameter inside parenthisis,we
+        can create more than metho in single class;
+
+        3> Static Method: we can give any name to that method,we are able to create more than one method before method name
+        we need to static keyword ,while calling the method we can call using class name,
+        we dont need to use the object for calling static method*/
+
+        class Arithmatic{
+            constructor()
+            {
+                document.write("<br> This is Arithmatic class Constructor");
+
+            }
+
+            addition(a,b){
+                document.write("<br> Addition is :"+(a+b));
+            }
+            substraction(x,y){
+                document.write("<br> Substraction is:"+(x-y));
+            
+            }
+            static multification(p1,q1){
+                document.write("<br> Multification is"+(p*q));
+
+            }
+
+            static Ddivision(m,n){
+                document.write("<br> Division is"+(m/n));
+            }
+        }
+    </script>
+</body>
+</html>

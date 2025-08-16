@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        /*
+        Callback function means we can put one function inside another function ,or we can say
+        we are able to put function as parameter to another function and its also possible to put as 
+        argument into another we can say one function run before another function axicuted  using settime function also
+         thewrw are two type 
+
+         1> Synchronous Function
+         2> Asynchronous Function
+
+         */
+
+         function Hi(){
+            console.log("Hey Hi");
+            
+         }
+         function GoodBye(){
+            console.log("Good bye all of you");
+            
+         }
+
+         function Hello(){
+            console.log("Hello");
+
+         }
+
+         function addition(a,b,Callback){
+
+            console.log("Addition is:",(a+b));
+            Callback();
+
+
+         }
+
+
+         let p=10;
+         let q=20;
+         addition(p,q,Hi);
+         addition(4,6,Hello);
+         addition(11,10,Goodbye);
+         addition(200,300,functio() {
+            console.log("by")
+         }
+         
+            
+         })
+    </Script>
+</body>
+</html>

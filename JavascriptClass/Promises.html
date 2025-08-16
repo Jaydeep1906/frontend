@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Promises Having three states pending,fulfill,reject .
+        we can create promises,
+        syntax: let x= new Promises((resolve,reject)=>{
+        //body of function
+        });
+        */
+
+        let ticket =new Promise((resolve,reject)=>{
+            const isborder=true;
+            if(isborder){
+                resolve('Your Flight has boarded, you are not in the plane..')
+
+            }
+            else{
+                reject('Ohh no flight Has been Canceled');
+
+            }
+
+        });
+
+        ticket.then((data)=>{
+            console.log('Heyyy',data);
+            
+        })
+        .catch((data)=>{
+            console.log('ohhh',data);
+            
+        })
+        .finally(
+            console.log('Process End')
+        )
+
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCheese(){
+            return new Promises((resolve,reject)=>{
+                const cheese="🧀";
+                console.log('Here its Cheese');
+               // resolve(cheese);
+                reject(cheese)
+
+              /*  setTimeout(()=>{
+                    const cheese="🧀";
+                    console.log('Here Its Cheese',cheese);
+                    resolve(cheese);
+                },2000)
+                */
+            })
+        }
+        console.log(getCheese);
+    </script>
+</body>
+</html>

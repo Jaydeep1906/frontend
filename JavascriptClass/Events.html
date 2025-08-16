@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            top:0;
+            background-color: purple;
+            color: white;
+            border: 2px solid navy;
+            height: 40px;
+            text-align: left;
+        }
+        main{
+            background-color: white;
+        }
+        footer{ 
+            bottom: 0;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Event in Js</h3>
+    </header>
+    <main>
+        <button onclick="Singleclick()">SingleClick</button><br><br>
+        <button ondblclick="DoubleClick()">Double Click</button><br><br>
+        <button oncontextmenu="RightClick()">RightClick</button><br><br>
+
+
+        <input type="text" onfocus="MouseOver()"><br><br>
+        <input type="text" onkeydown="Keydown()"><br><br>
+        <input type="text" onkeypress="keypress()"><br><br>
+        <input type="text" onkeyup="Keyup()"><br><br>
+
+    </main>
+    <footer>
+        <b>1</b>
+    </footer>
+
+    <script>
+        function SingleClick(){
+            console.log('Single click');
+
+        }
+        function DoubleClick(){
+        console.log('DoubleClick');
+        
+        }
+        function RightClick(){
+            console.log('Right Click');
+
+        }
+        function MouseOver(){
+            console.log('Over the mouse here');
+            
+        }
+        function Keydown(){
+            console.log('key Down');
+            
+        }
+        function keypress() {
+            console.log('keypress');
+            
+            
+        }
+        function Keyup(){
+            console.log('keyup')
+        }
+            
+        
+    </script>
+</body>
+</html>

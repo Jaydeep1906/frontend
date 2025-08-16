@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Json script ids use for date exchange format it have teo methods first
+        method is JSON.stringify:-it will convert js object to json string and Second method is 
+        JSON.parse: - it convert json string to js object*/
+
+        var emp={
+            eid:10256,
+            ename:"Aman",
+            eadd:"Pune",
+            ecompany:["tcs","Hcl","Tech Mahindra","wipro"],
+            edept:{
+                eid:111,
+                dept:"it",
+                esal:20000,
+                desg:"Software Developer",
+            },
+            eage:22
+
+
+        }
+        console.log(emp);
+        let jsonString1=JSON.stringify(emp);
+        console.log(jsonString1);
+        debugger;
+
+        console.log(jsonString1.length);
+        console.log(jsonString1.repeat(5));
+        console.log(jsonString1.toUpperCase());
+        console.log(jsonString1.toLocaleUpperCase());
+
+        let jsobj=JSON.parse(jsonString1);
+        console.log(jsobj);
+
+        let jsonString2=JSON.stringify(jsobj);
+
+        console.log(jsonString2);
+
+        console.log(jsonString2.repeat(4));
+    
+
+    </script>
+</body>
+</html>

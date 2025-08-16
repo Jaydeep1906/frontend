@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCheese(callback){
+            setTimeout(()=>{
+                const cheese="";
+
+                console.log('here its cheese',cheese);
+                callback(cheese);
+
+            },2000)
+        }
+
+        function makeDought(cheese){
+            setTimeout(()=>{
+                const dought =cheese+"";
+                console.log('here its Dough',dough);
+                console(dough)
+            },2000)
+        }
+
+        function bakePizza(dough,callback){
+            setTimeout(()=>{
+                const pizza =dought+"";
+                console.log('here its Pizaa');
+            },2000)
+        }
+
+        getCheese((cheese)=>{
+            console.log('we got cheese');
+            makeDought=(cheese,(dought)=>{
+                console.log('We got Dought');
+
+
+            }
+        })
+    </script>
+</body>
+</html>

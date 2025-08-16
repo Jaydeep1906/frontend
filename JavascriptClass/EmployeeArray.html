@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  arr=[
+            [ 11,'Akshay','Tcs', 'developer'],
+            [12,'Sachin','kpit','TL'],
+            [13,'Shubham','wipro','Manager'],
+            [14,'Rohit','IBM','Hr']
+        ]
+
+         document.write('<table border=2px,cellspacing=4px,cellpadding=4px >');
+        //document.write('<table alignment="center" >');
+     document.write('<thead> <tr><th>EID</th>  <th>Ename</th> <th>Company</th> <th>Designation</th> </tr></thead');
+
+        for(let i=0;i<arr.length;i++)
+    {
+        document.write("<tr>");
+            for(let j=0;j<arr.length;j++){
+                document.write("<td>"+arr[i][j]+"</td>");
+
+            }
+            document.write("</tr>");
+    }
+
+    </script>
+</body>
+</html>

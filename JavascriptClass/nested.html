@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Nested Statements : _- if statement exit another if statement mean we can say outer if exit  inner 
+        //if that if we can say nested if. 
+        //syntax :  if(condition)...outer if condition
+       // {
+        //    if(condition) ..inner if condition
+       /* {
+            else..inner else{
+
+            }
+        }
+        else(condition){
+
+        }
+        //}
+        */
+        let month =12,day=4;
+        if(month>=1 && month<=12){
+            if(day>=1 && day<=31)
+        {
+            document.write('It is valid Day:',day);
+        }
+        else{
+            document.write('It is not valid Day',Day);
+
+        }
+
+        }
+        else{
+            document.write("It is invalid month:",day)
+        }
+    </script>
+</body>
+</html>

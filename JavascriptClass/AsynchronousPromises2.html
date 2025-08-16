@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCheese(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    const Cheese="🧀";
+                    resolve (Cheese)
+
+
+                },2000)
+            })
+        }
+        function makeDough(Cheese){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    const dhough="cheese"+"🍩";
+                    console.log('Its bad cheese');
+                    reject(dough);
+
+                },2000)
+            })
+        }
+        function bakePizza(dough){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    const pizza=dough+"🍩";
+                    resolve(pizza);
+                },2000)
+            })
+        }
+
+        async function orderPizza() {
+            
+            
+        }
+       /* getCheese()
+        .then((Cheese)=>{
+            console.log('Here Its Cheese',Cheese);
+            return makeDough(cheese);
+        })
+        .then((dough)=>{
+            console.log('Here its dough',dough)
+            return bakePizza(dough);
+
+        })
+        .then((pizza)=>{
+            console.log('Here its pizza',pizza);
+
+        })
+        .catch((error)=>{
+            console.log('error occured');
+
+        })
+        .finally(()=>{
+            console.log("exexuted")
+        })
+
+        */
+        
+
+
+        
+    </script>
+</body>
+</html>
