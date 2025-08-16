@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+p{
+    font-size: lem;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 0.2em;
+}
+#flashlight{
+    --Xpos:50vw;
+    --Ypos: 50vh;
+}
+
+
+
+
